@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.restaurant.thariq">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".adapter.RestaurantAdapter" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".utils.DialogUtils" />
+        <activity android:name=".model.RegisterResponse" />
+        <activity android:name=".model.LoginResponse" />
+        <activity android:name=".model.Login" />
+        <activity android:name=".data.Session" />
+        <activity android:name=".data.Constans" />
+
+
+        <activity android:name=".auth.RegisterActivity" />
+        <activity android:name=".auth.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
